@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+.pokedex {
+    width: 80%;
+    max-width: 425px;
+}
+
+.pokemon-image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    height: 18%;
+}
+
+.pokemon-data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 30%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+.pokemon-name {
+  text-transform: capitalize;
+  color: #3a444d;
+}
+.form {
+  position: absolute;
+  top: 65%;
+  right: 28%;
+  width: 50%;
+}
+.input_search{
+  padding: 4%;
+  width: 100%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 4px;
+  box-shadow: -2px 2px #888,  -4px 4px #333
+}
+.buttons {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  bottom: 10%;
+  gap: 10%;
+  left: 21.7%;
+}
+.button {
+  color: white;
+  background-color: #444;
+  width: 50%;
+  padding: 4%;
+  cursor: pointer;
+  font-size: clamp(8px, 5vw, 0.9rem);
+  font-weight: 500;
+  border-radius: 4px;
+  box-shadow: -2px 2px #222, -3px 4px #000;
+}
+.button:active {
+  box-shadow: none;
+  box-shadow: inset -2px 2px #222;
+  font-size: 0.8rem;
+}
+a {
+  color: red;
+}
+a:active {
+  color: darkred;
+}
